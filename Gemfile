@@ -6,6 +6,9 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'simple_form'
+gem 'devise'
+gem 'figaro'
 
 group :development do
   gem 'pry-rails'
@@ -14,6 +17,7 @@ group :development do
   gem 'meta_request'
   gem 'powder'
   gem 'xray-rails'
+
 end
 
 # Gems used only for assets and not required

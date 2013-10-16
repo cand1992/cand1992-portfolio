@@ -22,3 +22,5 @@ config/initializers/secret_token.rb
 .ruby-version
 .DS_store
 .powenv
+# Ignore application configuration
+/config/application.yml
