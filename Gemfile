@@ -17,7 +17,7 @@ group :development do
   gem 'meta_request'
   gem 'powder'
   gem 'xray-rails'
-
+  gem 'letter_opener'
 end
 
 # Gems used only for assets and not required
