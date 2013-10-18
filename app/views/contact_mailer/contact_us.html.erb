@@ -1,0 +1,6 @@
+<h2>You recieved a new message from: <%= @message.name %>: <%= @message.email %> </h2>
+<hr />
+
+<h3><%= @message.subject %> </h3>
+
+<%= simple_format(@message.body) %>

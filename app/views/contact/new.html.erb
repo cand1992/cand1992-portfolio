@@ -1,0 +1,12 @@
+<div class='page-header'>
+  <h1>Contact Us!</h1>
+  <%= simple_form_for @message, url: contact_path do |f| %>
+    <%= f.input :email %>
+    <%= f.input :name %>
+    <%= f.input :subject %>
+    <%= f.input :body, as: :text %>
+    <div class='text-center'>
+    <%= f.button :submit, class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>

@@ -1,4 +1,7 @@
 Cand1992Portfolio::Application.routes.draw do
+  get "contact-us", to: "contact#new", as: :contact
+  post "contact-us", to: "contact#create", as: :contact
+
   devise_for :users
 
 root :to => "static_pages#home"
