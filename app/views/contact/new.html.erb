@@ -1,3 +1,5 @@
+<%= content_for :seo_title, 'Send me an email' %>
+<%= content_for :description, 'This page is to send an email and contact me.' %>
 <div class='page-header'>
   <h1>Contact Us!</h1>
   <%= simple_form_for @message, url: contact_path do |f| %>
