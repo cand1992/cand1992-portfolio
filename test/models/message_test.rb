@@ -32,8 +32,8 @@ class MessageTest < ActiveSupport::TestCase
   end
 
   test "email is a valid email" do
-    @message.email = "example@sdfgsfd.dfg"
-    assert_match Devise::email_regexp, @message.email
+    @message.email = "example@sdfgsfd,dfg"
+    refute_match Devise::email_regexp, @message.email
   end
 
 
