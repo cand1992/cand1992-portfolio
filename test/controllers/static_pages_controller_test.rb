@@ -13,10 +13,6 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_template :about_me
   end
 
-  test "should get my_projects" do
-    get :my_projects
-    assert_response :success
-    assert_template :my_projects
-  end
+
 
 end

@@ -5,6 +5,5 @@ class StaticPagesController < ApplicationController
   def about_me
   end
 
-  def my_projects
-  end
+
 end

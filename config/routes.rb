@@ -1,4 +1,5 @@
 Cand1992Portfolio::Application.routes.draw do
+  
   get "contact-us", to: "contact#new", as: :contact
   post "contact-us", to: "contact#create", as: :contact
 
@@ -11,7 +12,7 @@ get "home", to: "static_pages#home", as: :home
 
 get "about-me", to: "static_pages#about_me", as: :about_me
 
-get "my-projects", to: "static_pages#my_projects", as: :my_projects
+
 
 
   # The priority is based upon order of creation:
