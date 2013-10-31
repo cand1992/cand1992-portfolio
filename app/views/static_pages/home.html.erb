@@ -4,7 +4,10 @@
     <h1>Welcome to Christopher Anderson's Portfolio.</h1>
     <p>I just created this website about an hour ago. </br>Its looking pretty great so far.</p>
     <div id="wtime">
-      <p>It is now <span id="time_span"></span></p>        
+      <p>It is now <span id="time_span"></span></p>    
+      <% if user_signed_in? && @user.picture %>
+      <%= image_tag @user.picture.image.url(:medium) %>  
+      <% end %>
     </div>
   </div>
 </div>

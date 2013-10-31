@@ -1,5 +1,8 @@
 Cand1992Portfolio::Application.routes.draw do
   
+  resources :projects
+
+
   get "contact-us", to: "contact#new", as: :contact
   post "contact-us", to: "contact#create", as: :contact
 
