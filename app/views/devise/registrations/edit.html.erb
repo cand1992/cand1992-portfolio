@@ -4,7 +4,9 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%# f.input @user.picture %>
+    <%= f.simple_fields_for :picture do |pic|  %>
+       <%= pic.input :image %>
+    <% end %>
     <%= f.input :email, :required => true, :autofocus => true %>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

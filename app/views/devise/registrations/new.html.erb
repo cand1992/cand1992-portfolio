@@ -10,7 +10,9 @@
       <%= f.input :email, :required => true %> 
       <%= f.input :password, :required => true %>
       <%= f.input :password_confirmation, :required => true %>
-      <%= f.input :avatar %>
+      <%= f.simple_fields_for :picture do |pic|  %>
+        <%= pic.input :image %>
+      <% end %>
     </div>
 
     <div class="form-actions">
