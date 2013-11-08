@@ -16,7 +16,9 @@
 </p>
 
 <p>
-	<%= image_tag @project.picture.url(:medium) %>
+	<% if user_signed_in? && @project.picture %>
+      <%= image_tag @project.picture.image.url(:medium) %>  
+      <% end %>
 </p>
 
 

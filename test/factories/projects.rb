@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :project do
-    name "MyString"
-    description "MyText"
-    url "MyString"
+    name {Faker::Name.full_name}
+    description {Faker::Dizzleipsum.sentence}
+    url {Faker::Internet.http_url}
   end
 end

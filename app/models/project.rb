@@ -1,6 +1,7 @@
 class Project < ActiveRecord::Base
-	belongs_to :users
+	belongs_to :user
 	has_many :pictures, as: :pictureable
-  attr_accessible :description, :name, :url
+	accepts_nested_attributes_for :pictures
+  attr_accessible :description, :name, :url, :pictures_attributes
   
 end

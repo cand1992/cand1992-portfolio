@@ -15,6 +15,7 @@
     <ul class="nav navbar-nav"> 
       <li><%= link_to t(:about_me), about_me_path %></li>
       <li><%= link_to 'Contact Me', contact_path %></li>
+      <li><%= link_to 'Projects', projects_path %></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
@@ -25,7 +26,7 @@
         <li><%= link_to "Sign In", new_user_session_path %></li>
       <% end %>
       <li>
-        <p class="navbar-text"><%= time_tag(Time.now) %></p>
+        <p class="navbar-text"><%= Time.now.strftime("%B %-d, %Y") %> <span class="time_span"></span></p>
       </li>
 
     </ul>
