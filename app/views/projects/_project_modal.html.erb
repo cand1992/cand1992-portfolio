@@ -21,7 +21,7 @@
         <hr>
         <div class='project-thumbnails'>
           <% project.pictures.each do |pic| %>
-            <%= image_tag(pic.image.url(:thumb), class: 'img-responsive img-thumbnail', data: { url:  pic.image.url(:large) } )%>
+            <%= image_tag(pic.image.url(:thumb), class: 'img-responsive img-thumbnail', data: { url:  pic.image.url(:medium) } )%>
           <% end %>
         </div>
       </div>

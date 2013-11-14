@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 
+
 function updateTime(){
     var currentTime = new Date()
     var hours = currentTime.getHours()
