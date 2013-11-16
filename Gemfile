@@ -10,6 +10,8 @@ gem 'simple_form'
 gem 'devise'
 gem 'figaro'
 gem 'paperclip', '~> 3.0'
+gem 'backstretch-rails'
+gem 'draper', '~> 1.3'
 
 group :development do
   gem 'pry-rails'

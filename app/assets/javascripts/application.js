@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require jquery.backstretch
+
 
 
 function updateTime(){
@@ -30,5 +32,8 @@ function updateTime(){
 $(document).ready(function(){
 	setInterval(updateTime, 1000);
 	updateTime();
+
+    var bg_image_div = $('#background-img');
+    $.backstretch(bg_image_div.data('imgpath'));
 
 });

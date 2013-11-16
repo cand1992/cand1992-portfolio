@@ -2,6 +2,8 @@ $navbar-default-bg: lighten($primary-color, 10%);
 $navbar-default-color: lighten($primary-color, 80%);
 $navbar-default-link-color: $navbar-default-color;
 $navbar-default-link-hover-color: darken($navbar-default-color, 30%);
+$jumbotron-bg: lighten($primary-color, 30%);
+$modal-content-bg: #000000;
 
 
 @import 'bootstrap';
