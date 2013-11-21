@@ -24,6 +24,7 @@
       <% else %>
         <li><%=link_to "Sign Up", new_user_registration_path %></li> 
         <li><%= link_to "Sign In", new_user_session_path %></li>
+        <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
       <% end %>
       <li>
         <p class="navbar-text"><%= Time.now.strftime("%B %-d, %Y") %> <span class="time_span"></span></p>

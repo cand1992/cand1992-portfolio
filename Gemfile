@@ -12,6 +12,8 @@ gem 'figaro'
 gem 'paperclip', '~> 3.0'
 gem 'backstretch-rails'
 gem 'draper', '~> 1.3'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 group :development do
   gem 'pry-rails'

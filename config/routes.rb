@@ -6,7 +6,8 @@ Cand1992Portfolio::Application.routes.draw do
   get "contact-us", to: "contact#new", as: :contact
   post "contact-us", to: "contact#create", as: :contact
 
-  devise_for :users, controllers: {registrations: "registrations"}
+  devise_for :users, controllers: {registrations: "user/registrations",  omniauth_callbacks: "omniauth_callbacks" }
+
 
 root :to => "static_pages#home"
 get "path", to: "controller#action", as: :name_of_path
